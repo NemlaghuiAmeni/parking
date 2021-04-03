@@ -1,0 +1,49 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+<html>
+  <head>
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+  </head>
+<body id="LoginForm">
+<div class="container">
+<h1 class="form-heading"></h1>
+<div class="login-form">
+<div class="main-div">
+    <div class="panel">
+   <h2>Login</h2>
+   <p>Please enter your email and password !!</p>
+   </div>
+    <form id="Login">
+      <div class="form-group">
+      <input type="email" class="form-control"  [(ngModel)]="loginUserData.email" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="{{'CHAT.email' | translate }}">
+    </div>
+    <div class="form-group text-center">
+      <input type="password" class="form-control" [(ngModel)]="loginUserData.password" name="password" id="exampleInputPassword1" placeholder="{{'CHAT.password' | translate }}">
+    </div>
+        <div class="forgot">
+        <a href="reset.html" routerLink="/forgot">Forgot password?</a>
+</div>
+<button type="submit" class="btn btn-primary float-right"  (click)="loginUser()"  ><span class="wc-editable" data-pk="ws_btn_choose_your_space" data-type="action" >{{'CHAT.login' | translate }}</span></button>
+<div class="sign">
+  <div class="row">
+    <div class="col-sm-4">  <a href="reset.html" routerLink="/administration" >Admin ?</a></div>
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">  <a href="reset.html" routerLink="/register" >Sign Up</a></div>
+  </div>
+  
+
+
+</div>    </form>
+    </div>
+<p class="botto-text"> Designed by Treetronix Startup</p>
+</div></div>
+</body>
+</html>

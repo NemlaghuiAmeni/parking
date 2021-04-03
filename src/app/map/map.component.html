@@ -1,0 +1,1035 @@
+
+<app-navbar></app-navbar>
+
+
+
+
+
+
+<!-- //
+    //
+    // Commented 
+//
+//
+-->
+
+<!-- 
+    <section class="p-5 container" style="height:75vh; background-color: #d5ae90; background-image: url(https://trials.vevs.website/web-demo/car-parking-website/app/web/upload/medium/7-431-1601367442.jpg);background-size: cover;">
+    <h2 class="text-center fs-1 fw-bolder text-white">BOOK YOUR PARKING SPACE</h2>
+    <h6 class="fs-6 fw-light text-center text-white">Choose location, date, time and a parking spot!</h6>
+</section>
+
+      <ngb-carousel style="margin-bottom: 0;">
+            <ng-template ngbSlide>
+                <div class="carousel-caption" style="margin-bottom: 180px;  background-color: transparent ;">
+                    <h3
+                        style="color: rgb(26, 24, 24); font-family: 'Jazz LET', Courier, monospace; font-size: 4em;text-align: center; ">
+                        {{'HOME.TREETRONIX' | translate }}</h3>
+                    <h5
+                        style="color: rgb(26, 24, 24);text-align: center; margin-top: 40px; font-family: 'Courier New', Courier, monospace; font-size: 2.5em; ">
+                        {{'HOME.Together' | translate }}</h5>
+                    <p
+                        style=" color: rgb(12, 11, 11); margin-top: 40px;text-align: center; font-family: 'New Century ', Courier, monospace; font-size: 0.99em; ">
+    
+                    </p>
+                    <p
+                        style=" color: rgb(12, 11, 11); margin-top: 40px; margin-left: 300px; font-family: 'Courier New', Courier, monospace; font-size: 2em; ">
+                        {{'HOME.Books' | translate }}</p>
+                    <span class="material-icons"
+                        style="background-color: #d6ab91; font-size: 5em; margin-top: 50px; ">arrow_downward</span>
+                    <span class="material-icons"
+                        style="background-color: #d5ae90; font-size: 5em;margin-top: 50px; ">arrow_downward</span>
+                    <span class="material-icons"
+                        style="background-color: #d6ab91; font-size: 5em;margin-top: 50px; ">arrow_downward</span>
+                </div>
+    
+                <div class="picsum-img-wrapper">
+                    <img src="assets/img/cars.jpg" style="opacity:0.8; width: 100%; height: 70%; " alt="Random first slide">
+    
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="assets/img/car2.jpeg" alt="Random second slide">
+                </div>
+                <div class="carousel-caption" style="margin-bottom: 230px; background-color: transparent ;">
+                    <h3
+                        style="color: #464444; text-align: center; font-family: 'Courier New', Courier, monospace; font-size: 3em; ">
+                        {{'HOME.Real' | translate }}</h3>
+                    <p
+                        style="color: #464444; text-align: center; font-family: 'Courier New', Courier, monospace; font-size: 0.99em; margin-top: 50px; ">
+                        {{'HOME.vehicule' | translate }}</p>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="carousel-caption" style="margin-bottom: 300px; background-color: transparent ;">
+                    <h3
+                        style="color: white; text-align: center; font-family: 'Courier New', Courier, monospace; font-size: 3em; ">
+                        {{'HOME.steady' | translate }}</h3>
+                    <p
+                        style=" color: white;text-align: center; font-family: 'Courier New', Courier, monospace; font-size: 0.99em; margin-top: 180pw; ">
+                        {{'HOME.cities' | translate }}</p>
+                </div>
+                <div class="picsum-img-wrapper">
+                    <img src="https://orbitgt.com/wp-content/uploads/2019/02/orbit-gt-smart-cities-background.jpg"
+                        style="opacity:1;" alt="Random third slide">
+                </div>
+    
+            </ng-template>
+        </ngb-carousel>
+    
+       
+        <div class="wrapper">
+            <div class="hero-section cms-e-section"
+                style="background-image: url('assets/img/carPark.jpg'); opacity: 0.9;">
+    
+    
+                <div class="container">
+        
+                   <div class="row">
+                        <div class="col-sm-7"></div>
+                        <div class="col-sm-5">  <h3 style="text-transform: uppercase;"><span data-type="text">  </span>
+                        </h3>
+    </div>                  </div>
+                                   <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-6"><h1 class="h1"><span class="wc-editable" data-pk="ws_home_slide_title_1"
+                            data-type="text">{{'HOME.Book' | translate }}</span></h1></div>
+      <div class="col-sm-2"></div>
+    </div>
+      
+     
+    
+                   
+    
+                    <div id="pjCpContainer">
+                        <div class="row">
+                            <div class="col-lg-10 col-lg-offset-1 col-xs-12">
+     <div class="hero-text-desc"><span class="wc-editable" data-pk="ws_home_slide_desc_1"
+                            data-type="plaintext">{{'HOME.location' | translate }}</span></div>
+                                <div class="form cms-e-section">
+                                    <form [formGroup]="form" id="pjCpSearchForm" action="#" method="post"
+                                        class="pjCpSearchForm" novalidate="novalidate">
+                                        <div id="pjCpCalendarLocale" style="display: none;"
+                                            data-months="January_February_March_April_May_June_July_August_September_October_November_December"
+                                            data-days="Su_Mo_Tu_We_Th_Fr_Sa"></div>
+    
+                                        <div class="form-group">
+                                            <select (change)="selectedpark($event.target.value)" class="form-control form-control-lg" >
+                                               
+                                                <option class="form-control form-control-lg" *ngFor="let m of parks"  [ngValue]="m.name">{{m.name}}</option>
+                                              </select>
+                                          
+                                            -->      <!--label for="location_id" class="formLabel"><span class="wc-editable"
+                                                    data-pk="ws_location"
+                                                    data-type="text">{{'HOME.Location' | translate }}</span></label-->
+                                                    
+    
+                                            <!-- <select name="location_id" style="height:40px;" id="location_id" class="form-control" (change)="filterChanged($event.target.value)" [(ngModel)]="reserv.name" name="name" formControlName="name" >
+                                    <option value=""> </option>
+                                    <option *ngFor="let m of listParking"  [ngValue]="m.name">{{m.name}}</option>
+                                </select> -->
+                <!--                            <div class="ng-autocomplete" style="width: 100%;"> -->
+                                                
+                                                <!--ng-autocomplete [(ngModel)]="reserv.name" [data]="data"
+                                                    [searchKeyword]="keyword" (selected)='selectEvent($event)'
+                                                    (inputChanged)='onChangeSearch($event)'
+                                                    (inputFocused)='onFocused($event)' [itemTemplate]="itemTemplate"
+                                                    [notFoundTemplate]="notFoundTemplate">
+    
+                                                </ng-autocomplete-->
+    <!--
+                                                <ng-template #itemTemplate let-item>
+                                                    <a [innerHTML]="item.name"></a>
+                                                </ng-template>
+    
+                                                <ng-template #notFoundTemplate let-notFound>
+                                                    <div [innerHTML]="notFound"></div>
+                                                </ng-template>
+                                            </div>
+    
+                                            <p>
+                                                <i class="glyphicon glyphicon-map-marker"></i>
+    
+                                                <span class="wc-editable" data-pk="ws_cannot_find_location"
+                                                    data-type="text">{{'HOME.find' | translate }}</span> <a
+                                                    routerLink="/pres"><span class="wc-editable" data-pk="ws_view_map"
+                                                        data-type="text">{{'HOME.view' | translate }}</span></a>
+                                            </p>
+                                            <div>
+                                                <div>
+                                                    <select (change)="selectedplace($event.target.value)"  #selectedValue class="form-control form-control-lg"  id="selectedValue" ([ngModel])="selectedValue">
+                                           
+                                                        <option class="form-control form-control-lg" *ngFor="let m of listPlace"  [ngValue]="">{{m.name}}</option>
+                                                      </select>
+                                                </div>
+                                                <label for="location_id" class="formLabel"><span class="wc-editable"
+                                                        data-pk="ws_location"
+                                                        data-type="text">{{'HOME.Matricule' | translate }}</span></label>
+                                                <input class="form-control " style="height:40px;"
+                                                    [(ngModel)]="reserv.matricule" formControlName="matricule"
+                                                    placeholder="198 TUN 1254" name="matricule">
+                                            </div>
+                                        </div>
+                                        <label for="location_id" class="formLabel"><span class="wc-editable"
+                                                data-pk="ws_location"
+                                                data-type="text">{{'HOME.type' | translate }}</span></label>
+    
+                                        <input class="form-control " disabled style="height:40px;"
+                                            [(ngModel)]="reserv.Tpark" name="Tpark" formControlName="Tpark">
+    
+                                        <div class="row">
+                                            <div class="col-lg-6 col-xs-12">
+                                                <div>
+                                                    <label style="margin-top: 25px;"><span class="wc-editable"
+                                                            data-pk="ws_entry_date_time"
+                                                            data-type="text">{{'HOME.entre' | translate }}</span></label>
+    
+                                                    <div class="row">
+                                                        <div class="col-sm-6 col-xs-12" style="margin-top: 25px;">
+                                                            <div class="form-group">
+                                                                <div class="input-group datePick datePickFrom">
+                                                                    <span class="input-group-addon">
+                                                                        <span class="glyphicon glyphicon-calendar"
+                                                                            aria-hidden="true"></span>
+                                                                    </span>
+    
+                                                                    <input type="text" id="dateOfBirth" name="dateOfBirth"
+                                                                        class="form-control" type="date"
+                                                                        [(ngModel)]="reserv.dateE" name="dateE"
+                                                                        formControlName="dateE">
+    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="col-sm-6 col-xs-12">
+                                                            <div class="form-group">
+                                                                <div class="input-group timePick timePickFrom"
+                                                                    data-rel="from">
+                                                                    <timepicker [(ngModel)]="reserv.timeE" name="timeE"
+                                                                        formControlName="timeE"
+                                                                        style="height: 40px !important;"></timepicker>
+    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+    
+    
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="col-lg-6 col-xs-12">
+                                                <div class="dateTimePick">
+                                                    <label style="margin-top: 25px;"><span class="wc-editable"
+                                                            data-pk="ws_exit_date_time"
+                                                            data-type="text">{{'HOME.exit' | translate }}</span></label>
+    
+                                                    <div class="row">
+                                                        <div class="col-sm-6 col-xs-12" style="margin-top: 25px;">
+                                                            <div class="form-group">
+                                                                <div class="input-group datePick datePickTo">
+                                                                    <span class="input-group-addon">
+                                                                        <span class="glyphicon glyphicon-calendar"
+                                                                            aria-hidden="true"></span>
+                                                                    </span>
+    
+                                                                    <input type="text" id="dateOfBirth"
+                                                                        [(ngModel)]="reserv.dateS" name="dateS"
+                                                                        class="form-control" formControlName="dateS"
+                                                                        type="date">
+    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="col-sm-6 col-xs-12">
+                                                            <div class="form-group">
+                                                                <div class="input-group timePick timePickTo" data-rel="to">
+    
+                                                                    <timepicker [(ngModel)]="reserv.timeS" name="timeS"
+                                                                        formControlName="timeS"></timepicker>
+    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+    
+    
+    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    -->
+                                        <!--div>
+                                            <label for="location_id" class="formLabel"><span class="wc-editable"
+                                                    data-pk="ws_location"
+                                                    data-type="text">{{'HOME.place' | translate }}</span></label>
+                                            <span class="material-icons" (click)="choosePlace()">touch_app</span>
+                                        </div-->
+    <!--
+                                        <div class="form-group text-center">
+                                            <button type="submit" (click)="Reservation()" class="btn btn-primary" routerLink="../reservation-c/"><span
+                                                    class="wc-editable" data-pk="ws_btn_choose_your_space"
+                                                    data-type="action">{{'HOME.choose' | translate }}</span></button>
+                                            <a name="book"></a>
+                                            <p style="text-align: center;" *ngIf="timeRespect()">
+                                                {{'HOME.condition' | translate }}</p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+            <h3 style="text-align: center;margin-top: 40px;">{{'HOME.smart' | translate }}</h3>
+            <h4 style="text-align: center; margin-bottom: 20px;">{{'HOME.SOLUTIONS' | translate }} </h4>
+            <div class="container">
+                <div style="width: 100%;">
+                    <div>
+                    </div>
+                    <div>
+                        <ngb-carousel>
+                            <ng-template ngbSlide>
+                                <div class="item" alt="Random first slide">
+                                    <div class="row-fluid">
+                                        <div class="span4">
+                                            <span class="material-icons" style="font-size: 3.73em;">school</span>
+                                            <h4>{{'HOME.uni' | translate }}</h4>
+                                            <p> {{'HOME.defuni' | translate }} </p>
+    
+                                        </div>
+                                        <div class="span4">
+                                            <span class="material-icons" style="font-size: 3.73em;">local_hospital</span>
+                                            <h4>{{'HOME.hos' | translate }}</h4>
+                                            <p>{{'HOME.defhos' | translate }}</p>
+    
+                                        </div>
+                                        <div class="span4">
+                                            <span class="material-icons"
+                                                style="font-size: 3.73em;">local_convenience_store</span>
+                                            <h4>{{'HOME.Supermarkets' | translate }}</h4>
+                                            <p>{{'HOME.defSupermarkets' | translate }}</p>
+    
+                                        </div>
+    
+                                    </div>
+                                -->
+                                    <!--/row-fluid-->
+                                    <!-- 
+                                </div>
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <div class="item" alt="Random second slide">
+                                    <div class="row-fluid">
+                                        <div class="span3">
+                                            <span class="material-icons" style="font-size: 3.73em;">local_airport</span>
+                                            <h4>{{'HOME.Airports' | translate }}</h4>
+                                            <p>{{'HOME.defAirports' | translate }}</p>
+    
+                                        </div>
+                                        <div class="span3">
+                                            <span class="material-icons" style="font-size: 3.73em;">account_balance</span>
+                                            <h4>{{'HOME.Councils' | translate }}</h4>
+                                            <p>{{'HOME.defCouncils' | translate }}</p>
+    
+                                        </div>
+                                        <div class="span3">
+                                            <span class="material-icons" style="font-size: 3.73em;">store</span>
+                                            <h4>{{'HOME.operators' | translate }}</h4>
+                                            <p style=" size: 92px;">{{'HOME.defoperators' | translate }}</p>
+    
+                                        </div>
+                                        <div class="span3">
+                                            <span class="material-icons" style="font-size: 3.73em;">shopping_cart</span>
+                                            <h4>{{'HOME.Shopping' | translate }}</h4>
+                                            <p>{{'HOME.defShopping' | translate }}</p>
+    
+                                        </div>
+                                    </div>
+                                -->
+                                <!--/row-fluid-->
+                                <!--
+
+                                   
+                                </div>
+                            </ng-template>
+                        </ngb-carousel>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="section section-about" id="section-about">
+                    <div class="section-head">
+                        <div class="container cms-e-section">
+                            <h2 class="h2"><span class="wc-editable" data-pk="ws_about_me_title"
+                                    data-type="text">{{'HOME.about' | translate }}</span></h2>
+    
+    
+                            <div class="row">
+                                <div class="col-lg-10 col-lg-offset-1">
+                                    <div class="paragragh"><span class="wc-editable" data-pk="ws_about_me_desc"
+                                            data-type="plaintext">
+                                            <p style="text-align: center;"> {{'HOME.def' | translate }} </p>
+                                        </span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-deck">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="http://treetronix.com/wp-content/uploads/2020/05/about-mission.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+    
+                                <h1 style="text-align: center;">{{'HOME.Mission' | translate }}</h1>
+                                <p class="card-text" style="text-align: center;">{{'HOME.Offrez' | translate }}</p>
+    
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="http://treetronix.com/wp-content/uploads/2020/05/about-plan.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h1 style="text-align: center;">{{'HOME.objectif' | translate }}</h1>
+                                <p class="card-text" style="text-align: center;">{{'HOME.Am�liorer' | translate }}</p>
+    
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="http://treetronix.com/wp-content/uploads/2020/05/about-vision.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h1 style="text-align: center;">{{'HOME.Vision' | translate }}</h1>
+                                <p class="card-text" style="text-align: center;">{{'HOME.d�veloppement' | translate }}</p>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+    
+                <div class="section section-services" id="section-services">
+                    <div class="container">
+    
+    
+    
+                    </div>
+                </div>
+            </div>
+    
+         
+        </div>
+    
+    
+        <div>
+    
+        </div>
+        <div class="pj-signup-overlay"></div>
+        <div class="pj-signup-dialog"></div>
+        <div class="pj-signup-trigger"></div>
+        <div role="button" tabindex="-1" id="scroll-top" class="topbutton btn-hide" aria-label="Top"><span
+                 class="fa fa-angle-double-up"></span></div>
+   <footer class="footer" id="section-contact">
+                <div class="footer-nav">
+                    <div class="container cms-e-section">
+<br>
+<div class="row">
+  <div class="col-sm-3"><a  routerLink="/map">{{'HOME.Start' | translate }}</a></div>
+  <div class="col-sm-3"><a routerLink="/pres">{{'HOME.Locations' | translate }}</a></div>
+  <div class="col-sm-3"><a routerLink="/price">{{'HOME.Price' | translate }}</a></div>
+  <div class="col-sm-3"><a routerLink="/contact"> {{'HOME.Contact' | translate }}</a></div>
+</div>
+<br>
+<br>
+<br>
+                                       </div>
+                </div>
+                <div >
+                    <div >
+                        <div class="row">
+  <div class="col-sm-1"></div>
+                            <div class="col-sm-5 col-xs-12">
+                                <p class="copyright cms-e-section" data-quick="" data-quick2="company"
+                                    data-title-quick2="Company Details"> Copyright 2020 <a 
+                                        href="http://treetronix.com/"><span class="wc-editable" data-pk="ws_car_name"
+                                            data-type="text">Treetronix</span></a> | <span class="wc-editable"
+                                        data-pk="ws_rights_reserved" data-type="text">All rights reserved</span></p>
+    
+                                <p class="credits credits-secondary"><a href="http://treetronix.com/" target="_blank"
+                                        rel="noopener">IParking</a> </p>
+                            </div>
+                            <div class="col-sm-5 col-xs-12 text-right">
+                                <div class="socials socials-secondary cms-e-section row" data-quick2="social"
+                                    data-title-quick2="Social Media Profiles">
+					  <div class="col-sm-10"></div>
+                                    <div class="col-sm-1"><a href="https://www.facebook.com/treetronix/?ref=br_rs" target="_blank" class="ico"
+                                            rel="noopener"><i class="fa fa-facebook"></i></a></div>
+                                    <div class="col-sm-1"><a href="https://www.linkedin.com/company/treetronix/" target="_blank" class="ico"
+                                            rel="noopener"><i class="fa fa-linkedin"></i></a></div>
+    
+                                </div>
+  <div class="col-sm-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </body>
+    
+    
+    
+    
+    
+-->
+    
+    
+
+<!--
+**
+**  / /END
+**
+-->
+
+
+
+
+<body class="preload">
+		<div class="wrapper">
+    	<div class="hero-section">
+		<div class="container">
+			<div class="cms-e-section">
+				<div data-blockid="2"><h1 class="cms-e-element h1 text-center text-uppercase"><span class="wc-editable wc-element" data-model="pjBlockElement" data-field="text" data-type="text" data-foreign_id="2">Book your parking space</span></h1></div>
+				<div class="hero-text-desc">
+					<div data-blockid="3"><div class="cms-e-element text-center"><span class="wc-editable wc-element" data-model="pjBlockElement" data-field="text" data-type="textarea" data-foreign_id="3">Choose location, date, time and a parking spot!</span></div></div>				</div>
+
+				<div id="pjCpContainer">
+	<div class="cl-spinner-1-wrap">
+		<div class="cl-spinner-1">
+			<div class="cl-spinner-1-rect1"></div>
+			<div class="cl-spinner-1-rect2"></div>
+			<div class="cl-spinner-1-rect3"></div>
+			<div class="cl-spinner-1-rect4"></div>
+			<div class="cl-spinner-1-rect5"></div>
+		</div>
+	</div>
+</div>				<div data-blockid="14"><img loading="eager" class="wc-image cms-e-element hero-img hidden wc-image" src="https://trials.vevs.website/web-demo/car-parking-website/app/web/upload/medium/7-431-1601367442.jpg" alt="" title="" data-id="431"></div>			</div>
+		</div>
+	</div>
+	<div class="main">
+	<!--b:0-->
+		
+	<!--b:fe7dbd708d635ae254fa349571036267-->
+			<div class="section cms-e-section-outer section-about" id="section-about" data-id="1" data-hmac="fe7dbd708d635ae254fa349571036267">
+			<!--section-begin:fe7dbd708d635ae254fa349571036267-->
+			
+			<!--group-begin:3efeb1540775b472858f5e1fbd7a64e4-->
+		<div class="cms-e-group" data-id="579" data-hmac="3efeb1540775b472858f5e1fbd7a64e4"><div class="custom-layout">
+
+	<div class="spacer spacer-1"></div>
+
+</div></div>
+		<!--group-end:3efeb1540775b472858f5e1fbd7a64e4-->
+		
+			<!--group-begin:f06095559732e197dcf04ee9cc07e0b1-->
+			<div class="cms-e-group" data-id="1" data-hmac="f06095559732e197dcf04ee9cc07e0b1">
+				<div class="section-head">
+					<div class="container cms-e-section">
+						<div data-blockid="70"><h2 class="cms-e-element h1 text-center text-uppercase"><span class="wc-editable wc-element" data-model="pjBlockElement" data-field="text" data-type="text" data-foreign_id="70">About our company</span></h2></div>		
+						<div class="row">
+							<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-12">
+								<div class="section-subtitle">
+								<div data-blockid="72"><div class="cms-e-element text-center lead" style="color: #8c9092"><span class="wc-editable wc-element" data-model="pjBlockElement" data-field="text" data-type="textarea" data-foreign_id="72">Write something about your company. This is some dummy text lorem ipsum text, consectetur adipisicing elit. </span></div></div>								</div>
+							</div>
+						</div>
+			
+						<div class="row">
+							<div class="col-lg-10 col-lg-offset-1">
+								<div class="paragragh">
+								<div data-blockid="71"><div class="cms-e-element text-center" style="color: #8c9092"><span class="wc-editable wc-element" data-model="pjBlockElement" data-field="text" data-type="textarea" data-foreign_id="71">Replace this text with your company description. Write about your products and services.  Deserunt, dolor eaque odit reprehenderit ducimus nostrum similique consequatur nesciunt ut officia aut eius quia, doloremque itaque a quisquam harum iusto tenetur. Quidem at rerum debitis, reprehenderit repudiandae dolores magnam!  Explicabo eos nisi, deleniti cum veritatis dolorem inventore temporibus, quisquam est architecto qui. Odio beatae fugiat ullam incidunt. Labore distinctio dolor corporis?</span></div></div>								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--group-end:f06095559732e197dcf04ee9cc07e0b1-->
+			
+			<!--group-begin:40e6d5b3dd56abe479be41fad807b78e-->
+			<div class="cms-e-group" data-id="2" data-hmac="40e6d5b3dd56abe479be41fad807b78e">
+				<ul class="section-about-images">
+					<li class="wc-thumb btn-gallery-replace">
+						<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+							alt="" 
+							data-v=""
+							data-id=""
+							class="wc-image" loading="lazy">
+					</li>
+		
+					<li class="wc-thumb btn-gallery-replace">
+						<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+							alt="" 
+							data-v=""
+							data-id=""
+							class="wc-image" loading="lazy">
+					</li>
+		
+					<li class="wc-thumb btn-gallery-replace">
+						<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
+							alt=""
+							data-v=""
+							data-id=""
+							class="wc-image" loading="lazy">
+					</li>
+		
+					<li class="wc-thumb btn-gallery-replace">
+						<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
+							alt=""
+							data-v=""
+							data-id=""
+							class="wc-image" loading="lazy">
+					</li>
+				</ul>
+			</div>
+			<!--group-end:40e6d5b3dd56abe479be41fad807b78e-->
+
+<!--section-end:fe7dbd708d635ae254fa349571036267-->
+		</div>
+			<!--e:fe7dbd708d635ae254fa349571036267-->
+
+	<!--b:f58469a1c849866d5fb79c5e29b56b74-->
+		<!--e:f58469a1c849866d5fb79c5e29b56b74-->
+	
+	<!--b:1ef8f8886264ff01d2255fb879e1cfb1-->
+			<div class="section cms-e-section-outer section-services" id="section-services" data-id="3" data-hmac="1ef8f8886264ff01d2255fb879e1cfb1"			data-type="plugin" data-pid="13">
+			<!--section-begin:1ef8f8886264ff01d2255fb879e1cfb1-->
+
+			<!--group-begin:b9b8fa1eee0c24247bb1b47b778ea349-->
+		<div class="cms-e-group" data-id="580" data-hmac="b9b8fa1eee0c24247bb1b47b778ea349"><div class="custom-layout">
+
+	<div class="spacer spacer-1"></div>
+
+</div></div>
+		<!--group-end:b9b8fa1eee0c24247bb1b47b778ea349-->
+				
+			<!--group-begin:57792a21fed81fbbae38b9db3a2b6b3e-->
+			<div class="cms-e-group" data-id="4" data-hmac="57792a21fed81fbbae38b9db3a2b6b3e">
+				<div class="container">
+					<div class="section-head">
+						<div class="cms-e-section">
+							<div data-blockid="73"><h2 class="cms-e-element h2 text-center text-uppercase"><span class="wc-editable wc-element" data-model="pjBlockElement" data-field="text" data-type="text" data-foreign_id="73">Best offers</span></h2></div>		
+							<div class="row">
+								<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-12">
+									<div class="section-subtitle">
+									<div data-blockid="74"><div class="cms-e-element text-center lead"><span class="wc-editable wc-element" data-model="pjBlockElement" data-field="text" data-type="textarea" data-foreign_id="74">See our special offers and get our products for affordable prices!</span></div></div>									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--group-end:57792a21fed81fbbae38b9db3a2b6b3e-->
+
+			<!--group-begin:3b74587bf57bb0708b1eccc31257e856-->
+			<div class="cms-e-group" data-id="5" data-hmac="3b74587bf57bb0708b1eccc31257e856">
+				<div class="container">
+					<div class="row columns">
+											<div class="col-md-4 col-xs-12">
+							<div class=" cms-e-section">
+								<div data-recordid="39-field_93"><div class="wc-thumb btn-gallery-replace "><img class="wc-image cms-e-element img-responsive" src="https://trials.vevs.website/web-demo/car-parking-website/app/web/upload/medium/57e3dc424354ac14ea898c7bc32e307d1222dfe055527241752f7fd0-1280-58-1601367442.jpg" alt="" title="" data-id="58"></div></div>								
+								<div class="columns-item">
+									<div data-recordid="39-field_91"><h3 class="cms-e-element h5 text-uppercase"><span class="wc-editable wc-element" data-model="pjContentRecord" data-field="field_91" data-type="text" data-foreign_id="39">Online bookings</span></h3></div>                                	
+                                	                                	    <div class="offer-price">
+    										from    										<strong>$ 15.00</strong>
+    										per day    									</div>
+                                	                                    	
+									<div data-recordid="39-field_92"><div class="cms-e-element paragraph"><span class="wc-editable wc-element" data-model="pjContentRecord" data-field="field_92" data-type="textarea" data-foreign_id="39">Suspendisse urna arcu, vehicula eu vehicula et, cursus nec lorem. Nullam lectus felis, euismod nec mollis vitae, accumsan vel ligula. Praesent rhoncus ultrices gravida. In sed sapien in purus ultricies ultrices in quis nisi.</span></div></div>								</div>
+																	<div class="offer-actions text-center">
+										<a href="reservations.html" class="btn btn-info" target="_self">Book Now</a>
+									</div>
+																</div>
+						</div>
+												<div class="col-md-4 col-xs-12">
+							<div class=" cms-e-section">
+								<div data-recordid="40-field_93"><div class="wc-thumb btn-gallery-replace "><img class="wc-image cms-e-element img-responsive" src="https://trials.vevs.website/web-demo/car-parking-website/app/web/upload/medium/57e2d2424353a414ea898c7bc32e307d1222dfe055527241752f7ad6-1280-59-1601367442.jpg" alt="" title="" data-id="59"></div></div>								
+								<div class="columns-item">
+									<div data-recordid="40-field_91"><h3 class="cms-e-element h5 text-uppercase"><span class="wc-editable wc-element" data-model="pjContentRecord" data-field="field_91" data-type="text" data-foreign_id="40">Short-term</span></h3></div>                                	
+                                	                                	    <div class="offer-price">
+    										from    										<strong>$ 19.00</strong>
+    										per weekend    									</div>
+                                	                                    	
+									<div data-recordid="40-field_92"><div class="cms-e-element paragraph"><span class="wc-editable wc-element" data-model="pjContentRecord" data-field="field_92" data-type="textarea" data-foreign_id="40">Donec rhoncus maximus magna, eu tincidunt lectus iaculis at. Maecenas eros nunc, consectetur quis velit ut, vestibulum cursus arcu. Morbi pharetra quam eros, in mattis libero consequat a. Donec hendrerit pharetra est.</span></div></div>								</div>
+																	<div class="offer-actions text-center">
+										<a href="reservations.html" class="btn btn-info" target="_self">Book Now</a>
+									</div>
+																</div>
+						</div>
+												<div class="col-md-4 col-xs-12">
+							<div class=" cms-e-section">
+								<div data-recordid="41-field_93"><div class="wc-thumb btn-gallery-replace "><img class="wc-image cms-e-element img-responsive" src="https://trials.vevs.website/web-demo/car-parking-website/app/web/upload/medium/54e6d5444d54b114a6d08279c12f3479083edbe35052794975297f-1280-60-1601367442.jpg" alt="" title="" data-id="60"></div></div>								
+								<div class="columns-item">
+									<div data-recordid="41-field_91"><h3 class="cms-e-element h5 text-uppercase"><span class="wc-editable wc-element" data-model="pjContentRecord" data-field="field_91" data-type="text" data-foreign_id="41">Summer Offer</span></h3></div>                                	
+                                	                                	    <div class="offer-price">
+    										from    										<strong>$ 9.00</strong>
+    										summer only    									</div>
+                                	                                    	
+									<div data-recordid="41-field_92"><div class="cms-e-element paragraph"><span class="wc-editable wc-element" data-model="pjContentRecord" data-field="field_92" data-type="textarea" data-foreign_id="41">Nullam eget auctor purus. Sed facilisis, sapien sed posuere pharetra, nisl velit dictum odio, ac pulvinar sapien leo a augue. Sed vitae euismod enim. Aliquam malesuada sem mi, a gravida neque dignissim sed.</span></div></div>								</div>
+																	<div class="offer-actions text-center">
+										<a href="reservations.html" class="btn btn-info" target="_self">Book Now</a>
+									</div>
+																</div>
+						</div>
+											</div>
+				</div>
+			</div>
+			<!--group-end:3b74587bf57bb0708b1eccc31257e856-->
+
+<!--section-end:1ef8f8886264ff01d2255fb879e1cfb1-->
+		</div>
+			<!--e:1ef8f8886264ff01d2255fb879e1cfb1-->
+	
+	<!--b:633a210c8df1193c354af28d14fa9424-->
+		<!--e:633a210c8df1193c354af28d14fa9424-->
+	
+	<!--b:3e51248dcf65776697c12e6dc2eab273-->
+			<div class="section cms-e-section-outer section-services" id="section-services" data-id="5" data-hmac="3e51248dcf65776697c12e6dc2eab273" 
+			data-type="plugin" data-pid="22">
+			<!--section-begin:3e51248dcf65776697c12e6dc2eab273-->
+
+			
+			
+			<!--group-begin:2520345a8e7196b525d8ef68955faac9-->
+		<div class="cms-e-group" data-id="585" data-hmac="2520345a8e7196b525d8ef68955faac9"><div class="custom-layout">
+
+	<div class="spacer spacer-1"></div>
+
+</div></div>
+		<!--group-end:2520345a8e7196b525d8ef68955faac9-->
+			
+			<!--group-begin:a0451b7c04720294a6defe1059fdd136-->
+			<div class="cms-e-group" data-id="7" data-hmac="a0451b7c04720294a6defe1059fdd136">
+				<div class="container">
+					<div class="section-head">
+						<div class="cms-e-section">
+							<div data-blockid="75"><h2 class="cms-e-element h2 text-center text-uppercase"><span class="wc-editable wc-element" data-model="pjBlockElement" data-field="text" data-type="text" data-foreign_id="75">Services</span></h2></div>		
+							<div class="row">
+								<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-12">
+									<div class="section-subtitle">
+										<div data-blockid="76"><div class="cms-e-element text-center lead"><span class="wc-editable wc-element" data-model="pjBlockElement" data-field="text" data-type="textarea" data-foreign_id="76">We are a company that offers different products and services.</span></div></div>									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--group-end:a0451b7c04720294a6defe1059fdd136-->
+
+<!--group-begin:885f11e8247c32a1ed55a1ed5f25519e-->
+			<div class="cms-e-group" data-id="8" data-hmac="885f11e8247c32a1ed55a1ed5f25519e">
+				<div class="container">
+					<div class="row columns">
+											<div class="col-md-4 col-xs-12">
+							<div class="service  cms-e-section">
+								<div class="services-item-icon">
+									<div data-recordid="66-field_144"><div class=""><img src="address-book-alt-1-1-4f60082e9f46acf3b6650ee10faf5de8.svg" data-key="attr-66-field_144-key" class="wc-vector cms-e-element"></div></div>								</div>
+								
+								<div class="columns-item">
+									<div data-recordid="66-field_146"><h3 class="cms-e-element h5 text-uppercase"><span class="wc-editable wc-element" data-model="pjContentRecord" data-field="field_146" data-type="text" data-foreign_id="66">Sample service</span></h3></div>									<div data-recordid="66-field_143"><div class="cms-e-element paragraph"><span class="wc-editable wc-element" data-model="pjContentRecord" data-field="field_143" data-type="textarea" data-foreign_id="66">Enter service description here. Delete this text and type your own. Quisque nec lectus maximus, convallis ante a, varius nunc. Pellentesque lacinia nulla est, eget vestibulum odio mattis at.</span></div></div>								</div>
+							</div>
+						</div>
+												<div class="col-md-4 col-xs-12">
+							<div class="service  cms-e-section">
+								<div class="services-item-icon">
+									<div data-recordid="67-field_144"><div class=""><img src="lightbulb-alt-1-1-4f60082e9f46acf3b6650ee10faf5de8.svg" data-key="attr-67-field_144-key" class="wc-vector cms-e-element"></div></div>								</div>
+								
+								<div class="columns-item">
+									<div data-recordid="67-field_146"><h3 class="cms-e-element h5 text-uppercase"><span class="wc-editable wc-element" data-model="pjContentRecord" data-field="field_146" data-type="text" data-foreign_id="67">Another Service</span></h3></div>									<div data-recordid="67-field_143"><div class="cms-e-element paragraph"><span class="wc-editable wc-element" data-model="pjContentRecord" data-field="field_143" data-type="textarea" data-foreign_id="67">Service description goes here. Edit this dummy text. Nam consectetur odio sed nulla ullamcorper mattis. Mauris dictum vehicula erat, eu convallis turpis consectetur et. Duis non lobortis felis.</span></div></div>								</div>
+							</div>
+						</div>
+												<div class="col-md-4 col-xs-12">
+							<div class="service  cms-e-section">
+								<div class="services-item-icon">
+									<div data-recordid="68-field_144"><div class=""><img src="mastercard-1-1-4f60082e9f46acf3b6650ee10faf5de8.svg" data-key="attr-68-field_144-key" class="wc-vector cms-e-element"></div></div>								</div>
+								
+								<div class="columns-item">
+									<div data-recordid="68-field_146"><h3 class="cms-e-element h5 text-uppercase"><span class="wc-editable wc-element" data-model="pjContentRecord" data-field="field_146" data-type="text" data-foreign_id="68">Service or product</span></h3></div>									<div data-recordid="68-field_143"><div class="cms-e-element paragraph"><span class="wc-editable wc-element" data-model="pjContentRecord" data-field="field_143" data-type="textarea" data-foreign_id="68">Change this dummy text and add information about your service. Cras porttitor et elit quis hendrerit. Mauris vitae pharetra quam. Sed a pharetra odio, sit amet feugiat lorem.</span></div></div>								</div>
+							</div>
+						</div>
+											</div>
+				</div>
+			</div>
+			<!--group-end:885f11e8247c32a1ed55a1ed5f25519e-->
+
+<!--section-end:3e51248dcf65776697c12e6dc2eab273-->
+		</div>
+			<!--e:3e51248dcf65776697c12e6dc2eab273-->
+	
+	<!--b:8ed309fd3efbe0cede86b7878671f258-->
+		<!--e:8ed309fd3efbe0cede86b7878671f258-->
+	
+	<!--b:62059211698d15694ca317910429611b-->
+			<div class="section cms-e-section-outer section-testimonials" id="section-testimonials" data-id="7" data-hmac="62059211698d15694ca317910429611b" 
+			data-type="plugin" data-pid="20">
+			<!--section-begin:62059211698d15694ca317910429611b-->
+
+			<!--group-begin:aae8d45792174e69e3515d8d33ef58a0-->
+		<div class="cms-e-group" data-id="581" data-hmac="aae8d45792174e69e3515d8d33ef58a0"><div class="custom-layout">
+
+	<div class="spacer spacer-1"></div>
+
+</div></div>
+		<!--group-end:aae8d45792174e69e3515d8d33ef58a0-->
+			
+			<!--group-begin:1e5f0cb5040f1b9dcd3108aaf4f972c7-->
+			<div class="cms-e-group" data-id="10" data-hmac="1e5f0cb5040f1b9dcd3108aaf4f972c7">
+				<div class="container">
+					<div class="section-head">
+						<div class="cms-e-section">
+							<div data-blockid="77"><h2 class="cms-e-element h2 text-center text-uppercase"><span class="wc-editable wc-element" data-model="pjBlockElement" data-field="text" data-type="text" data-foreign_id="77">Testimonials</span></h2></div>		
+							<div class="row">
+								<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-12">
+									<div class="section-subtitle">
+										<div data-blockid="78"><div class="cms-e-element text-center lead"><span class="wc-editable wc-element" data-model="pjBlockElement" data-field="text" data-type="textarea" data-foreign_id="78">Read what our customers have to say about our products and services.</span></div></div>									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--group-end:1e5f0cb5040f1b9dcd3108aaf4f972c7-->
+			
+			<!--group-begin:93e56a84ae264b420acad26c53813a66-->
+			<div class="cms-e-group" data-id="11" data-hmac="93e56a84ae264b420acad26c53813a66">
+				<div class="container">
+					<div class="quotes"></div>
+	
+					<div id="testimonial" class="carousel slide testimonial" data-ride="carousel">
+						<ol class="carousel-indicators" role="tablist">
+							<li role="tab" aria-controls="t-panel0" id="t-tab0" aria-selected="true" data-target="#testimonial" data-slide-to="0" class="active"></li><li role="tab" aria-controls="t-panel1" id="t-tab1" aria-selected="false" data-target="#testimonial" data-slide-to="1"></li><li role="tab" aria-controls="t-panel2" id="t-tab2" aria-selected="false" data-target="#testimonial" data-slide-to="2"></li>						</ol>
+		
+						<div class="carousel-inner">
+															<div role="tabpanel" id="t-panel0" aria-labelledby="t-tab0" class="item testimonial-item active">
+									<div class="row">
+										<div class="col-lg-10 col-lg-offset-1 cms-e-section">
+											<div data-recordid="53-field_138"><div class="cms-e-element lead paragraph"><span class="wc-editable wc-element" data-model="pjContentData" data-field="field_138" data-type="textarea" data-foreign_id="53">This is a sample testimonial. Proin et metus lorem. Suspendisse dapibus convallis mattis. Fusce ultrices vehicula ipsum ut molestie. Donec convallis nunc ac neque hendrerit, ut venenatis ipsum pulvinar. Pellentesque eget augue interdum, eleifend enim vel, ultricies magna. Cras in turpis leo.</span></div></div>											<p><span data-recordid="53-field_137"><strong class="cms-e-element"><span class="wc-editable wc-element" data-model="pjContentData" data-field="field_137" data-type="text" data-foreign_id="53">Frederika Pellini</span></strong></span></p>
+										</div>
+									</div>
+								</div>
+																<div role="tabpanel" id="t-panel1" aria-labelledby="t-tab1" class="item testimonial-item">
+									<div class="row">
+										<div class="col-lg-10 col-lg-offset-1 cms-e-section">
+											<div data-recordid="54-field_138"><div class="cms-e-element lead paragraph"><span class="wc-editable wc-element" data-model="pjContentData" data-field="field_138" data-type="textarea" data-foreign_id="54">Delete this text and add your testimonial. Next is some dummy text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla varius porta arcu, at aliquet ipsum vehicula vitae. Aliquam venenatis mattis lorem, a consequat erat ultrices vel. Nam condimentum semper nunc, at blandit mauris volutpat a.&nbsp;</span></div></div>											<p><span data-recordid="54-field_137"><strong class="cms-e-element"><span class="wc-editable wc-element" data-model="pjContentData" data-field="field_137" data-type="text" data-foreign_id="54">Marco Cassano</span></strong></span></p>
+										</div>
+									</div>
+								</div>
+																<div role="tabpanel" id="t-panel2" aria-labelledby="t-tab2" class="item testimonial-item">
+									<div class="row">
+										<div class="col-lg-10 col-lg-offset-1 cms-e-section">
+											<div data-recordid="55-field_138"><div class="cms-e-element lead paragraph"><span class="wc-editable wc-element" data-model="pjContentData" data-field="field_138" data-type="textarea" data-foreign_id="55">Here is one more sample testimonial. Replace it with your company testimonial. Sed ac accumsan justo. Sed non ante malesuada, venenatis diam eu, suscipit nisl. Morbi eget arcu mauris. Morbi non lacus lorem. Nulla feugiat tortor vitae urna tincidunt, tristique imperdiet purus consequat.&nbsp;</span></div></div>											<p><span data-recordid="55-field_137"><strong class="cms-e-element"><span class="wc-editable wc-element" data-model="pjContentData" data-field="field_137" data-type="text" data-foreign_id="55">Johnathan Smith</span></strong></span></p>
+										</div>
+									</div>
+								</div>
+														</div>
+		
+						<a class="left carousel-control" href="#testimonial" role="button" data-slide="prev" aria-label="Prev">
+							<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+							<span class="sr-only"></span>
+						</a>
+		
+						<a class="right carousel-control" href="#testimonial" role="button" data-slide="next" aria-label="Next">
+							<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+							<span class="sr-only"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--group-end:93e56a84ae264b420acad26c53813a66-->
+
+<!--section-end:62059211698d15694ca317910429611b-->
+		</div>
+			<!--e:62059211698d15694ca317910429611b-->
+	
+	<!--b:df314ef735d5a76b5abf7e5ae73b539c-->
+		<!--e:df314ef735d5a76b5abf7e5ae73b539c-->
+	
+	<!--b:30b98e203ffb7df5a2369c8464f098d5-->
+			<div class="section cms-e-section-outer section-blog" id="section-blog" data-id="9" data-hmac="30b98e203ffb7df5a2369c8464f098d5"			data-type="plugin" data-pid="15">
+			<!--section-begin:30b98e203ffb7df5a2369c8464f098d5-->
+
+			<!--group-begin:c3b4bc3328915858d787c1833f70f079-->
+		<div class="cms-e-group" data-id="582" data-hmac="c3b4bc3328915858d787c1833f70f079"><div class="custom-layout">
+
+	<div class="spacer spacer-1"></div>
+
+</div></div>
+		<!--group-end:c3b4bc3328915858d787c1833f70f079-->
+			
+			<!--group-begin:4a8c95e4fa901ac18fc8c39684c83777-->
+			<div class="cms-e-group" data-id="13" data-hmac="4a8c95e4fa901ac18fc8c39684c83777">
+				<div class="container">
+					<div class="section-head">
+						<div class="cms-e-section">
+							<div data-blockid="79"><h2 class="cms-e-element h2 text-center text-uppercase"><span class="wc-editable wc-element" data-model="pjBlockElement" data-field="text" data-type="text" data-foreign_id="79">Latest blog posts</span></h2></div>		
+							<div class="row">
+								<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-12">
+									<div class="section-subtitle">
+										<div data-blockid="80"><div class="cms-e-element text-center lead"><span class="wc-editable wc-element" data-model="pjBlockElement" data-field="text" data-type="textarea" data-foreign_id="80">Stay up to date with our most recent news and updates from our blog.</span></div></div>									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--group-end:4a8c95e4fa901ac18fc8c39684c83777-->
+			
+			<!--group-begin:744665594eb49e46b8f680a1fc8ee900-->
+			<div class="cms-e-group" data-id="14" data-hmac="744665594eb49e46b8f680a1fc8ee900">
+				<div class="container">
+					<div class="row blog-posts">
+													<div class="col-lg-4 col-md-6 col-xs-12 cms-e-section">
+								<a href="sample-blog-post_blog-70.html" aria-label="Sample blog post">
+									<div data-recordid="70-field_114"><img class="wc-image cms-e-element img-responsive" src="https://trials.vevs.website/web-demo/car-parking-website/app/web/upload/medium/car-park-image-581-1601367442.jpg" alt="" title="" data-id="581"></div>								</a>
+									
+								<div class="blog-post-caption">
+									<a href="sample-blog-post_blog-70.html">
+										<div data-recordid="70-field_110"><h2 class="cms-e-element"><span class="wc-editable wc-element" data-model="pjContentRecord" data-field="field_110" data-type="text" data-foreign_id="70">Sample blog post</span></h2></div>									</a>
+									
+									<p>10/25/2019 8:14 am | <span data-recordid="70-field_118"><span class="cms-e-element"><span class="wc-editable wc-element" data-model="pjContentRecord" data-field="field_118" data-type="text" data-foreign_id="70">John Smith</span></span></span></p>
+								</div>
+							</div>
+														<div class="col-lg-4 col-md-6 col-xs-12 cms-e-section">
+								<a href="demo-blog-post-title_blog-72.html" aria-label="Demo blog post title">
+									<div data-recordid="72-field_114"><img class="wc-image cms-e-element img-responsive" src="https://trials.vevs.website/web-demo/car-parking-website/app/web/upload/medium/back-1-583-1601367442.jpg" alt="" title="" data-id="583"></div>								</a>
+									
+								<div class="blog-post-caption">
+									<a href="demo-blog-post-title_blog-72.html">
+										<div data-recordid="72-field_110"><h2 class="cms-e-element"><span class="wc-editable wc-element" data-model="pjContentRecord" data-field="field_110" data-type="text" data-foreign_id="72">Demo blog post title</span></h2></div>									</a>
+									
+									<p>10/8/2019 8:17 am | <span data-recordid="72-field_118"><span class="cms-e-element"><span class="wc-editable wc-element" data-model="pjContentRecord" data-field="field_118" data-type="text" data-foreign_id="72">Mary Nathan</span></span></span></p>
+								</div>
+							</div>
+														<div class="col-lg-4 col-md-6 col-xs-12 cms-e-section">
+								<a href="another-blog-post_blog-71.html" aria-label="Another blog post">
+									<div data-recordid="71-field_114"><img class="wc-image cms-e-element img-responsive" src="https://trials.vevs.website/web-demo/car-parking-website/app/web/upload/medium/car-parking-1024x576-582-1601367442.jpg" alt="" title="" data-id="582"></div>								</a>
+									
+								<div class="blog-post-caption">
+									<a href="another-blog-post_blog-71.html">
+										<div data-recordid="71-field_110"><h2 class="cms-e-element"><span class="wc-editable wc-element" data-model="pjContentRecord" data-field="field_110" data-type="text" data-foreign_id="71">Another blog post</span></h2></div>									</a>
+									
+									<p>10/4/2019 8:16 am | <span data-recordid="71-field_118"><span class="cms-e-element"><span class="wc-editable wc-element" data-model="pjContentRecord" data-field="field_118" data-type="text" data-foreign_id="71">Mark Stevenson</span></span></span></p>
+								</div>
+							</div>
+												</div>
+		
+										<div class="cms-e-section">
+						<div data-blockid="81"><div class="text-center"><a href="blog.html" class="btn btn-primary cms-e-element" target="_self"><span class="wc-editable wc-element" data-model="pjBlockElement" data-field="text" data-type="action" data-foreign_id="81">Visit blog</span></a></div></div>					</div>
+									</div>
+			</div>
+			<!--group-end:744665594eb49e46b8f680a1fc8ee900-->
+
+<!--section-end:30b98e203ffb7df5a2369c8464f098d5-->
+		</div>
+			<!--e:30b98e203ffb7df5a2369c8464f098d5-->
+	
+	<!--b:b8bbe2599185cc5a80347fbf6a24e063-->
+		<!--e:b8bbe2599185cc5a80347fbf6a24e063-->
+	
+	<!--b:79531904d1b63fa6e18101ad7e6140ce-->
+			<div class="section cms-e-section-outer section-faq" id="section-faq" data-id="11" data-hmac="79531904d1b63fa6e18101ad7e6140ce"			data-type="plugin" data-pid="21">
+			<!--section-begin:79531904d1b63fa6e18101ad7e6140ce-->
+
+			<!--group-begin:00d7d3582a8f51b35a4030f17797a9e9-->
+		<div class="cms-e-group" data-id="583" data-hmac="00d7d3582a8f51b35a4030f17797a9e9"><div class="custom-layout">
+
+	<div class="spacer spacer-1"></div>
+
+</div></div>
+		<!--group-end:00d7d3582a8f51b35a4030f17797a9e9-->
+			
+			<!--group-begin:78a89b46733b15f970c6404f15dc6456-->
+			<div class="cms-e-group" data-id="16" data-hmac="78a89b46733b15f970c6404f15dc6456">
+				<div class="container">
+					<div class="section-head">
+						<div class="cms-e-section">
+							<div data-blockid="82"><h2 class="cms-e-element h2 text-center text-uppercase"><span class="wc-editable wc-element" data-model="pjBlockElement" data-field="text" data-type="text" data-foreign_id="82">FAQ</span></h2></div>		
+							<div class="row">
+								<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-12">
+									<div class="section-subtitle">
+										<div data-blockid="83"><div class="cms-e-element text-center lead"><span class="wc-editable wc-element" data-model="pjBlockElement" data-field="text" data-type="textarea" data-foreign_id="83">Got a question? We're here to answer. If you don't see your question here, drop us a line.</span></div></div>									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--group-end:78a89b46733b15f970c6404f15dc6456-->
+			
+			<!--group-begin:ff53743d898445334ac7a799d3599a2b-->
+			<div class="cms-e-group" data-id="17" data-hmac="ff53743d898445334ac7a799d3599a2b">
+				<div class="container">
+					<div class="row">
+											<div class="col-md-6 col-xs-12">
+							<div class=" cms-e-section">
+								<div class="question">
+									<div class="question-sign"><span class="wc-editable" data-pk="ws_home_faq_q" data-type="text">Q</span></div>
+									<div data-recordid="60-field_140"><h2 class="cms-e-element h5" style="color: #222222"><span class="wc-editable wc-element" data-model="pjContentRecord" data-field="field_140" data-type="text" data-foreign_id="60">Sample question about your company?</span></h2></div>								</div>
+								<div class="answer">
+									<div class="answer-sign"><span class="wc-editable" data-pk="ws_home_faq_a" data-type="text">A</span></div>
+									<div data-recordid="60-field_141"><div class="cms-e-element"><span class="wc-editable wc-element" data-model="pjContentRecord" data-field="field_141" data-type="textarea" data-foreign_id="60">This is a sample question. Edit this text and enter your answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra sed turpis nec bibendum. Donec leo erat, ultrices quis dui sit amet, iaculis imperdiet justo. Nunc et cursus risus. Aenean hendrerit pellentesque neque. Ut at dolor elit. Suspendisse potenti. Fusce nec rhoncus nisl, vel malesuada elit.</span></div></div>								</div>
+							</div>
+						</div>
+												<div class="col-md-6 col-xs-12">
+							<div class=" cms-e-section">
+								<div class="question">
+									<div class="question-sign"><span class="wc-editable" data-pk="ws_home_faq_q" data-type="text">Q</span></div>
+									<div data-recordid="61-field_140"><h2 class="cms-e-element h5" style="color: #222222"><span class="wc-editable wc-element" data-model="pjContentRecord" data-field="field_140" data-type="text" data-foreign_id="61">Another example question?</span></h2></div>								</div>
+								<div class="answer">
+									<div class="answer-sign"><span class="wc-editable" data-pk="ws_home_faq_a" data-type="text">A</span></div>
+									<div data-recordid="61-field_141"><div class="cms-e-element"><span class="wc-editable wc-element" data-model="pjContentRecord" data-field="field_141" data-type="textarea" data-foreign_id="61">Here is another sample answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra sed turpis nec bibendum. Donec leo erat, ultrices quis dui sit amet, iaculis imperdiet justo. Nunc et cursus risus. Aenean hendrerit pellentesque neque. Ut at dolor elit. Suspendisse potenti. Fusce nec rhoncus nisl, vel malesuada elit.</span></div></div>								</div>
+							</div>
+						</div>
+											</div>
+		
+										<div class="cms-e-section">
+						<div data-blockid="84"><div class="text-center"><a href="faq.html" class="btn btn-primary cms-e-element" target="_self"><span class="wc-editable wc-element" data-model="pjBlockElement" data-field="text" data-type="action" data-foreign_id="84">Read FAQ</span></a></div></div>					</div>
+									</div>
+			</div>
+			<!--group-end:ff53743d898445334ac7a799d3599a2b-->
+
+<!--section-end:79531904d1b63fa6e18101ad7e6140ce-->
+		</div>
+			<!--e:79531904d1b63fa6e18101ad7e6140ce-->
+	
+	<!--b:6e40a408343ed6f1dbdf62154e360ad2-->
+		<!--e:6e40a408343ed6f1dbdf62154e360ad2-->
+	
+	<!--b:605346d75c80fdf69c9d4738fdf41b43-->
+		<!--e:605346d75c80fdf69c9d4738fdf41b43-->
+	
+	<!--b:a5fb9fd5b6d125ad5d3265b029459df1-->
+		<!--e:a5fb9fd5b6d125ad5d3265b029459df1-->
+	
+	<!--b:3dfb5f7d2830c0fe068f28818bc7c0bb-->
+		<!--e:3dfb5f7d2830c0fe068f28818bc7c0bb-->
+	
+	<!--b:afd51bd52a0d3f93f94fd63155beed4b-->
+		<!--e:afd51bd52a0d3f93f94fd63155beed4b-->
+	
+	<!--b:8cea99a2dfdf7c954c1d4d87f86ab44c-->
+		<!--e:8cea99a2dfdf7c954c1d4d87f86ab44c-->
+	
+	<!--b:c69ecd4cbccf8153af694beedc1eca1f-->
+		<!--e:c69ecd4cbccf8153af694beedc1eca1f-->
+
+<!--e:0-->
+</div>   

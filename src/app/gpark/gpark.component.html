@@ -1,0 +1,263 @@
+<!doctype html> <html lang="nl">
+<html lang="nl">
+    <head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+ <!--<div class="page-heading-area">
+
+    <div class="container">
+      <div class="page-heading text-center cms-e-section" data-quick="">
+            <div data-blockid="114"><h1 class="cms-e-element h1 page-name" style="font-size:50px"><span class="wc-editable wc-element" data-model="pjBlockElement" data-field="text" data-type="text" data-foreign_id="114">Dashboard Admin</span></h1></div>			<div data-blockid="115"><div class="cms-e-element lead"><span class="wc-editable wc-element" data-model="pjBlockElement" data-field="text" data-type="textarea" data-foreign_id="115"></span></div></div>					</div>
+    </div>
+  </div>-->
+  <meta charset="utf-8">
+
+
+</head>
+
+<body>
+  <app-navbar></app-navbar>
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer class="sidenav">
+        <mat-toolbar>Menu</mat-toolbar>
+        <mat-nav-list>
+            <a mat-list-item routerLink="/gpark">Dashboard</a>
+            <a mat-list-item routerLink="/table">Liste of Reservations</a>
+            <a mat-list-item routerLink="/ap">Add Parks</a>
+            <a mat-list-item routerLink="/mp">Add Places</a>
+            <a mat-list-item routerLink="/ad">Add Admin</a>
+
+
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar>
+            <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+
+        </mat-toolbar>
+
+     <!--  <div class="features-boxed">
+            <div class="container">
+
+                <div class="row justify-content-center features" >
+                    <div class="col-sm-6 col-md-5 col-lg-4 item" style="font-size: 50px;">
+                        <div class="box" style="height: 210px;"><i class="fa fa-map-marker icon"  style="font-size:24px;color:gray"></i>
+                            <i class="fa fa-map-marker icon" style="font-size:35px;color:gray"></i>
+                            <i class="fa fa-map-marker icon"  style="font-size:48px;color:gray"> </i>
+                            <h3 class="name" style="height: 0px;color:gray">NB PARKING </h3>
+
+                            <p class="description" style="font-size: 70px;">{{cmp}}</p>
+
+                            <p class="description"></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>-->
+
+        <div>
+            <label for="location_id" class="formLabel"><h3 class="wc-editable" data-pk="ws_location"
+      data-type="text">Choose Parking</h3></label>
+
+            <select name="location_id" id="location_id" class="form-control form-control-lg" (change)="filterChanged($event.target.value)" class="form-control form-control-lg" ([ngModel])="selected">
+    <option></option>
+    <option class="form-control form-control-lg" *ngFor="let m of marker"  [ngValue]="m">{{m.name}}</option>
+
+  </select>
+        </div>
+        <div class="container">
+            <div class="row">
+            <div class="col-md-3">
+              <div class="card-counter primary">
+                <i class="fa fa-thumbs-o-up"></i>
+                <span class="count-numbers">{{nbt}}</span>
+                <span class="count-name">Number of total places</span>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card-counter danger">
+                <i class="fa fa-thumbs-o-down"></i>
+                <span class="count-numbers">{{nbv}}</span>
+                <span class="count-name">Number of places Reserved </span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card-counter success">
+                <i class="fa fa-car"></i>
+                <span class="count-numbers">{{m}}</span>
+                <span class="count-name">Number of Car in the Park</span>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card-counter info">
+                <i class="fa fa-dollar"></i>
+                <span class="count-numbers">{{priceT}}</span>
+                <span class="count-name">Price Total</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="intro">
+            <h2 class="text-center" >&nbsp;</h2>
+            <p class="text-center"></p>
+        </div>
+
+
+
+
+        <div class="container">
+        <div class="row" >
+        <div class="col-sm-6 col-md-5 col-lg-4 item" style="font-size: 50px;">
+        <div style="display: block; height: 100px; width:800px ;">
+            <canvas baseChart
+                [chartType]="chartType"
+                [datasets]="chartDatasets"
+                [labels]="chartLabels"
+                [colors]="chartColors"
+                [options]="chartOptions"
+                [legend]="true"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)">
+            </canvas>
+          </div>
+        </div>
+
+
+        <div class="features-boxed ">
+            <div class="container">
+        <div class="col-sm-6 col-md-5 col-lg-4 item" style="font-size: 50px; left:850px ;">
+
+        <div class="box" style="height: 210px;"><i class="fa fa-map-marker icon"  style="font-size:24px;color: rgb(243, 174, 157)"></i>
+                <i class="fa fa-map-marker icon" style="font-size:35px;color:rgb(148, 126, 131)"></i>
+                <i class="fa fa-map-marker icon"  style="font-size:48px;color:rgb(67, 66, 68)"> </i>
+                <h3 class="name" style="height: 0px;color: :rgb(148, 126, 131)">NB Reservation </h3>
+                <p class="description" style="font-size: 70px;color:rgb(148, 126, 131)">{{nbparking}}</p>
+                <p class="description"></p>
+        </div>
+        </div>
+    </div>
+        </div>
+        </div>
+    </div>
+
+
+    <div class="intro">
+        <h2 class="text-center" >&nbsp;</h2>
+    </div>
+    <div class="intro">
+        <h2 class="text-center" >&nbsp;</h2>
+    </div>
+        <div class="intro">
+            <h2 class="text-center" >&nbsp;</h2>
+        </div>
+        <div class="row" >
+            <div class="span6">
+                <h3 >NB Reservation / days in week</h3>
+                <table class="table" style="width: 490px; margin-left: 8%; margin-top: 20px; border: black;background-color: gray;">
+                    <thead class="black white-text">
+                        <tr>
+                            <th scope="col">dem</th>
+                            <th scope="col">lun</th>
+                            <th scope="col">mar</th>
+                            <th scope="col">mer</th>
+                            <th scope="col">jeu</th>
+                            <th scope="col">ven</th>
+                            <th scope="col">sam</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <td>{{dem}}</td>
+                            <td>{{lun}}</td>
+                            <td>{{mar}}</td>
+                            <td>{{mer}}</td>
+                            <td>{{jeu}}</td>
+                            <td>{{ven}}</td>
+                            <td>{{sam}}</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="span6">
+                <h3>NB Reservation/ month</h3>
+                <table class="table" style="width: 490px; margin-left: 10%;  margin-top: 20px; border: black;background-color: gray;">
+                    <thead class="black white-text">
+                        <tr>
+                            <th scope="col">jan</th>
+                            <th scope="col">fiv</th>
+                            <th scope="col">mar</th>
+                            <th scope="col">avr</th>
+                            <th scope="col">mai</th>
+                            <th scope="col">jun</th>
+                            <th scope="col">jui</th>
+                            <th scope="col">out</th>
+                            <th scope="col">sep</th>
+                            <th scope="col">oct</th>
+                            <th scope="col">nou</th>
+                            <th scope="col">dec</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <td> {{year.jun}}</td>
+                            <td>{{year.fev}}</td>
+                            <td>{{year.mar}}</td>
+                            <td>{{year.avr}}</td>
+                            <td>{{year.mai}}</td>
+                            <td>{{year.jon}}</td>
+                            <td>{{year.jui}}</td>
+                            <td>{{year.out}}</td>
+                            <td>{{year.sep}}</td>
+                            <td>{{year.oct}}</td>
+                            <td>{{year.nouv}}</td>
+                            <td>{{year.dec}}</td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+        <!------ Include the above in your HEAD tag ---------->
+
+
+
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+</body>
+</html>

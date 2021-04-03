@@ -1,0 +1,23 @@
+
+  agm-map {
+    height: 600px;
+
+  }
+
+  .map { height: 600px; width: 100%; }
+  
+  .entry-header, .page-heading-area {
+    color: #fff;
+    background-image:url("https://hdwallsource.com/img/2014/9/blur-26347-27038-hd-wallpapers.jpg");
+    padding: 52px 0;
+   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height:180px ;
+  }
+
+.footer {
+  text-align: center;
+  padding: 3px;
+  background-color:#353A40;
+  color: white;
+}

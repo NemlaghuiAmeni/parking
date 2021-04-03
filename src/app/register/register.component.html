@@ -1,0 +1,53 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+<html>
+  <head>
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+  </head>
+<body id="LoginForm">
+<div class="container">
+<h1 class="form-heading"></h1>
+<div class="login-form">
+<div class="main-div">
+    <div class="panel">
+   <h2>Please Sign Up</h2>
+   <p>It's free and always will be.</p>
+   </div>
+   <form class="form">
+    <div class="form-group">
+     
+      <input type="text" class="form-control" [(ngModel)]="registerUserData.username" name="email" placeholder="{{'CHAT.username' | translate }}">
+    </div>
+    <div class="form-group">
+     
+      <input type="email" class="form-control" [(ngModel)]="registerUserData.email" name="email" id="exampleInputEmail1" placeholder="{{'CHAT.email' | translate }}" >
+    </div>
+    <div class="alert alert-danger" role="alert" *ngIf="valid == true" >
+      {{'CHAT.cond1' | translate }}
+    </div>
+    <div class="form-group">
+      
+      <input type="password" class="form-control" [(ngModel)]="registerUserData.password"  name="password" id="exampleInputPassword1" placeholder="{{'CHAT.password' | translate }}">
+    </div>
+    <div class="alert alert-danger" role="alert" *ngIf="length == true" >
+      {{'CHAT.cond2' | translate }}
+    </div>
+
+
+    <button type="button"  (click)="registerUser()" class="btn btn-primary float-right">{{'CHAT.signup' | translate }}</button>
+  </form>
+    </div>
+<p class="botto-text"> Designed by Treetronix Startup</p>
+</div></div>
+
+
+</body>
+</html>
